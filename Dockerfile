@@ -11,4 +11,4 @@ RUN yarn install --frozen-lockfile --ignore-optional
 
 COPY . $FRONT_ROOT
 
-CMD [ "yarn", "vite" ]
+CMD [ "yarn", "dev" ]
