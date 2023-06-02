@@ -1,0 +1,13 @@
+version: '3'
+services:
+  front:
+    build: .
+    volumes:
+      - .:/vite-catchup
+      - node_modules:/vite-catchup/node_modules
+    ports:
+      - "5173:5173"
+    tty: true
+
+volumes:
+  node_modules:
